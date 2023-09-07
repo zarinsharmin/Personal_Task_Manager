@@ -4,7 +4,8 @@ from django.http import HttpResponse
 
 def home(request):
     # return HttpResponse("hello")
-    return render(request, "index.html")
+    data = {"title": "Personal Task Manager"}
+    return render(request, "index.html", data)
 
 
 # Dynamic path
